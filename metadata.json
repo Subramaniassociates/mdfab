@@ -1,0 +1,6 @@
+{
+  "name": "MDFAB Stainless Steel Fabrication",
+  "description": "Modern premium stainless steel industrial racks, trolleys, cupboards, and metal pallets fabrication platform with scroll-linked logo animations and interactive real-time configurators.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
