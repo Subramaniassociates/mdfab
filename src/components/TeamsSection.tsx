@@ -2,6 +2,9 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ShieldCheck, Award, HeartHandshake, Phone, Mail, FileText, Sparkles } from 'lucide-react';
 
+// Import image for Vite
+import founderImg from '/src/assets/images/corporate_executive_portrait_1782638875184.jpg';
+
 export default function TeamsSection() {
   const founder = {
     name: "Mr C. Manjunath",
@@ -14,7 +17,7 @@ export default function TeamsSection() {
       "ISO Quality Audit Certified",
       "Tier-1 Automotive OEM Partner"
     ],
-    image: "/src/assets/images/corporate_executive_portrait_1782638875184.jpg"
+    image: founderImg
   };
 
   return (

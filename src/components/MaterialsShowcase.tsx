@@ -2,6 +2,12 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ShieldCheck, Cpu, Sparkles, Sliders } from 'lucide-react';
 
+// Import images for Vite
+import ssCupboardImg from '/src/assets/images/ss_cupboard_cleanroom_1782376978140.jpg';
+import ssRacksImg from '/src/assets/images/ss_racks_industrial_1782376946271.jpg';
+import ssTrolleyImg from '/src/assets/images/ss_trolley_premium_1782376962250.jpg';
+import ssPalletImg from '/src/assets/images/ss_metal_pallet_1782376992792.jpg';
+
 interface MaterialInfo {
   id: string;
   name: string;
@@ -43,7 +49,7 @@ export default function MaterialsShowcase() {
       glowShadow: 'shadow-[0_0_50px_rgba(34,211,238,0.25)]',
       borderColor: 'border-cyan-500/80',
       iconColor: 'text-cyan-400',
-      image: '/src/assets/images/ss_cupboard_cleanroom_1782376978140.jpg'
+      image: ssCupboardImg
     },
     {
       id: 'ss304',
@@ -61,7 +67,7 @@ export default function MaterialsShowcase() {
       glowShadow: 'shadow-[0_0_50px_rgba(59,130,246,0.25)]',
       borderColor: 'border-blue-500/80',
       iconColor: 'text-blue-400',
-      image: '/src/assets/images/ss_racks_industrial_1782376946271.jpg'
+      image: ssRacksImg
     },
     {
       id: 'electropolish',
@@ -79,7 +85,7 @@ export default function MaterialsShowcase() {
       glowShadow: 'shadow-[0_0_50px_rgba(20,184,166,0.25)]',
       borderColor: 'border-teal-500/80',
       iconColor: 'text-teal-400',
-      image: '/src/assets/images/ss_trolley_premium_1782376962250.jpg'
+      image: ssTrolleyImg
     },
     {
       id: 'satinbrush',
@@ -97,7 +103,7 @@ export default function MaterialsShowcase() {
       glowShadow: 'shadow-[0_0_50px_rgba(168,85,247,0.25)]',
       borderColor: 'border-purple-500/80',
       iconColor: 'text-purple-400',
-      image: '/src/assets/images/ss_metal_pallet_1782376992792.jpg'
+      image: ssPalletImg
     }
   ];
 

@@ -3,6 +3,12 @@ import { motion } from 'motion/react';
 import { ProductItem, ProductCategory } from '../types';
 import { Layers, Truck, Package, DoorClosed, Check, Cog, ArrowRight, ShieldCheck, Factory, HeartPulse } from 'lucide-react';
 
+// Import images for Vite
+import ssRacksImg from '/src/assets/images/ss_racks_industrial_1782376946271.jpg';
+import ssTrolleyImg from '/src/assets/images/ss_trolley_premium_1782376962250.jpg';
+import ssCupboardImg from '/src/assets/images/ss_cupboard_cleanroom_1782376978140.jpg';
+import ssPalletImg from '/src/assets/images/ss_metal_pallet_1782376992792.jpg';
+
 interface ProductCatalogProps {
   onAddToQuote: (category: ProductCategory) => void;
 }
@@ -24,7 +30,7 @@ export default function ProductCatalog({ onAddToQuote }: ProductCatalogProps) {
       category: 'racks',
       name: 'Multipurpose Industrial SS Racks',
       description: 'Engineered for extreme durability and optimal storage density, these high-grade stainless steel racks are corrosion-resistant and fully customizable. Perfect for cold storage, cleanrooms, and food handling units.',
-      image: '/src/assets/images/ss_racks_industrial_1782376946271.jpg',
+      image: ssRacksImg,
       specs: [
         { label: 'Available Grades', value: 'SS 304, SS 316L, SS 202' },
         { label: 'Loading Capacity', value: 'Up to 250 kg per shelf (reinforced)' },
@@ -43,7 +49,7 @@ export default function ProductCatalog({ onAddToQuote }: ProductCatalogProps) {
       category: 'trolleys',
       name: 'Heavy-Duty SS Utility Trolleys',
       description: 'The pinnacle of ergonomic material handling. Our industrial-grade SS trolleys provide seamless, silent transit for components, medical kits, or chemical containers in demanding environments.',
-      image: '/src/assets/images/ss_trolley_premium_1782376962250.jpg',
+      image: ssTrolleyImg,
       specs: [
         { label: 'Available Grades', value: 'SS 304, SS 316, SS 202' },
         { label: 'Wheel Caster Type', value: 'Non-marking polyurethane with dual pedal brakes' },
@@ -62,7 +68,7 @@ export default function ProductCatalog({ onAddToQuote }: ProductCatalogProps) {
       category: 'cupboards',
       name: 'Pharma & Cleanroom SS Cupboards',
       description: 'Precision-crafted sealed enclosures for pharmaceutical vials, cleanroom apparel, surgical apparatus, or sensitive electronics. Dust-proof, chemical-resistant, and high-security lockers.',
-      image: '/src/assets/images/ss_cupboard_cleanroom_1782376978140.jpg',
+      image: ssCupboardImg,
       specs: [
         { label: 'Available Grades', value: 'SS 316, SS 304' },
         { label: 'Door Styles', value: 'Tempered safety glass window / Double-skin solid SS sliding' },
@@ -81,7 +87,7 @@ export default function ProductCatalog({ onAddToQuote }: ProductCatalogProps) {
       category: 'pallets',
       name: 'Corrosion-Resistant SS Metal Pallets',
       description: 'Replaces wood and plastic entirely. Our hollow channel stainless steel pallets deliver an cleanable, fire-proof, and virtually indestructible solution for heavy-duty storage and forklift transport.',
-      image: '/src/assets/images/ss_metal_pallet_1782376992792.jpg',
+      image: ssPalletImg,
       specs: [
         { label: 'Available Grades', value: 'SS 304, SS 316' },
         { label: 'Static Load Capacity', value: 'Up to 4,500 kg' },
