@@ -6,35 +6,42 @@ interface IntroScreenProps {
   onScrollThreshold: (pastThreshold: boolean) => void;
 }
 
+// Import images for Vite
+import ssCupboardImg from '/src/assets/images/ss_cupboard_cleanroom_1782376978140.jpg';
+import ssRacksImg from '/src/assets/images/ss_racks_industrial_1782376946271.jpg';
+import ssTrolleyImg from '/src/assets/images/ss_trolley_premium_1782376962250.jpg';
+import ssPalletImg from '/src/assets/images/ss_metal_pallet_1782376992792.jpg';
+import welderImg from '/src/assets/images/welder_fabricator_custom_1782377704509.jpg';
+
 const previewProducts = [
   {
     id: 'a',
     title: 'Cleanroom SS Cupboards',
-    img: '/src/assets/images/ss_cupboard_cleanroom_1782376978140.jpg',
+    img: ssCupboardImg,
     desc: 'Hygienic storage setups for pharmaceutical labs.',
   },
   {
     id: 'b',
     title: 'Autoclave SS Racks',
-    img: '/src/assets/images/ss_racks_industrial_1782376946271.jpg',
+    img: ssRacksImg,
     desc: 'Heavy-duty multi-tier shelving units.',
   },
   {
     id: 'c',
     title: 'Medical Hygienic Trolleys',
-    img: '/src/assets/images/ss_trolley_premium_1782376962250.jpg',
+    img: ssTrolleyImg,
     desc: 'Sterile grade stainless steel mobility.',
   },
   {
     id: 'd',
     title: 'Heavy-Duty SS Pallets',
-    img: '/src/assets/images/ss_metal_pallet_1782376992792.jpg',
+    img: ssPalletImg,
     desc: 'Corrosion-proof load-bearing steel platforms.',
   },
   {
     id: 'e',
     title: 'Custom Fabrications',
-    img: '/src/assets/images/welder_fabricator_custom_1782377704509.jpg',
+    img: welderImg,
     desc: 'Bespoke designs built to precise layout blueprints.',
   }
 ];
@@ -124,7 +131,7 @@ export default function IntroScreen({ onScrollThreshold }: IntroScreenProps) {
           }} 
         >
           <img
-            src="/src/assets/images/welder_fabricator_custom_1782377704509.jpg"
+            src={welderImg}
             alt="MDFAB High Precision Welding Facility"
             className="w-full h-full object-cover object-center filter brightness-95 contrast-105"
             referrerPolicy="no-referrer"
